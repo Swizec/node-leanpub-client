@@ -127,7 +127,7 @@ Leanpub.prototype.sales = function(options, callback){
 /* GET */
 
 Leanpub.prototype.get = function(url, callback){
-  request.get(url, { form: { api_key: this.key } }, 
+  request.get(url + '?api_key=' + this.key, 
     function(err, res, body){
       callback(err, JSON.parse(body));
     }
