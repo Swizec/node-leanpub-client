@@ -107,7 +107,7 @@ Leanpub.prototype.sales = function(options, callback){
   var url;
 
   if (options.report === 'summary'){
-    url = this.url + options.slug + '/sales.json';
+    url = this.url + options.slug + '/royalties.json';
   } else if (options.report === 'all'){
     url = this.url + options.slug + '/individual_purchases.json';
   } else {
